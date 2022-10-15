@@ -1,0 +1,5 @@
+
+.product_img img:hover {
+    max-width: 60% !important;
+    transition: .20s !important;
+}

@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9636BF;
+}
+
+.big_banner {
+    margin-bottom: 1% !important;
+}
+
+.main_products {
+    margin-top: 2%;
+}
+
+.nav_menu {
+    margin-top: 1% !important;
+}
+
+.page_title {
+    max-width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.page_title>h1 {
+    color: #1F001E;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+#bottom_banner>img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* header */
+
+header {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    /* background-color: lightblue; */
+}
+
+#container_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---Área da Logo--- */
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 4px;
+    width: 100px;
+}
+
+/*---*/
+
+/* ---Área da barra de Pesquisa--- */
+
+.search_bar {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 0.3em;
+
+    display: flex;
+    align-items: center;
+
+    margin: 10px 10px;
+}
+
+.search_bar>input {
+    border: 0;
+    width: 100%;
+    color: rgb(128, 113, 134);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
+    
+}
+
+.search_bar>input::placeholder {
+    color: rgba(155, 138, 163, 0.486);
+}
+
+.search_bar::before {
+    content: url(images/header/lupa.svg);
+    margin: 0.5em;
+}
+
+#header_buttons>ul {
+    display: flex;
+    
+}
+
+.nav_button_header {
+    color: #9636BF;
+    display: flex;
+    align-items: center;
+}
+
+#car::after {
+    content: url(images/header/carrinho.svg);
+    margin-left: 0.5em;
+    margin-right: 1em;
+}
+
+#login::after {
+    content: url(images/header/login.svg);
+    margin-left: 0.5em;
+
+}
+
+/*---*/
+
+.nav_menu {
+    max-width: 80%;
+    display: flex;
+    height: 48px;
+    margin: 0 auto;
+    background-color: #9636BF;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#up_menu span {
+    color: #FFFFFF;
+    font-weight: 100;
+    font-size: clamp(1em, 1em, 1.5em);
+}
+
+.big_banner{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.big_banner>img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Barra de navegação de baixo */
+
+#down_menu {
+    justify-content: left;
+}
+
+#down_menu>ul {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+#down_menu>ul>li {
+    color: #FFFFFF;
+    font-weight: 100;
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+}
+
+#strong_li {
+    font-weight: 500 !important;
+    display: flex;
+    align-items: center;
+}
+
+#strong_li::after {
+    content: url(images/navbar/down_arrow.svg);
+}
+
+/* Fim do Header */
+
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    background-color: #1F001E;
+}
+
+.footer_main {
+    max-width: 80%;
+    height: auto;
+    display: grid;
+    column-gap: 2%;
+    row-gap: 5%;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 1% 0%;
+}
+
+#f_titles {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer_content {
+    color: rgb(240, 230, 230);
+    font-weight: lighter;
+    font-size: 13px;
+    margin: 2%;
+    transition: 0.20s;
+}
+
+.footer_content:hover {
+    font-size: 18px;
+    transition: 0.20s;
+}
+
+#butao {
+    border: 0;
+    color: white;
+    background: #9636BF;
+    box-shadow: 1px 1px 2px 1px rgba(52, 52, 52, 0.75);
+    border-radius: 5px;
+    max-width: 100%;
+    height: auto;
+    font-size: 16px;
+    padding: 2% 15%;
+    transition: 0.20s;
+}
+
+#butao:hover {
+    background: #af87c0;
+    font-size: larger;
+    transition: 0.20s;
+}
+
+#footer_logo {
+    grid-column: 1 / 4;
+}
+
+#redes {
+    display: flex;
+    margin: 0 !important;
+}
+
+#redes a {
+    max-width: 30px;
+    max-height: auto;
+    margin: 2%;
+}
+
+/* Fim do Footer */
+
+.product_img>img {
+    transition: .20s !important;
+}
+
+.product_img>img:hover {
+    max-width: 60% !important;
+    transition: .20s !important;
+}

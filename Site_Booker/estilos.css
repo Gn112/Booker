@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    list-style: none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #9636BF;
+} 
+
+a {
+    text-decoration: none;
+}
+
+header {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+    /* background-color: lightblue; */
+}
+
+#container_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---Área da Logo--- */
+
+#logo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 4px;
+    width: 100px;
+}
+
+/*---*/
+
+/* ---Área da barra de Pesquisa--- */
+
+.search_bar {
+    width: 100%;
+    height: auto;
+    background: #FFFFFF;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 0.3em;
+
+    display: flex;
+    align-items: center;
+
+    margin: 10px 10px;
+}
+
+.search_bar>input {
+    border: 0;
+    width: 100%;
+    color: rgb(128, 113, 134);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    outline: none;
+    
+}
+
+.search_bar>input::placeholder {
+    color: rgba(155, 138, 163, 0.486);
+}
+
+.search_bar::before {
+    content: url(images/header/lupa.svg);
+    margin: 0.5em;
+}
+
+#header_buttons>ul {
+    display: flex;
+    
+}
+
+.nav_button_header {
+    color: #9636BF;
+    display: flex;
+    align-items: center;
+}
+
+.nav_button_header:hover {
+    border: 1px solid #d56cff;
+}
+
+#car::after {
+    content: url(images/header/carrinho.svg);
+    margin-left: 0.5em;
+    margin-right: 1em;
+}
+
+#login::after {
+    content: url(images/header/login.svg);
+    margin-left: 0.5em;
+
+}
+
+/*---*/
+
+.nav_menu {
+    max-width: 80%;
+    display: flex;
+    height: 48px;
+    margin: 0 auto;
+    background-color: #9636BF;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#up_menu span {
+    color: #FFFFFF;
+    font-weight: 100;
+    font-size: clamp(1em, 1em, 1.5em);
+    margin: 0px 20px;
+    padding: 0;
+    transition: 0.40s;
+}
+
+#up_menu span:hover {
+    border-bottom: 1px solid #d56cff;
+    transition: 0.40s;
+}
+
+.big_banner{
+    display: flex;
+    justify-content: center;
+    margin: 2% 0;
+}
+
+.big_banner>img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Barra de navegação de baixo */
+
+#down_menu {
+    justify-content: left;
+}
+
+#down_menu>ul {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+}
+
+#down_menu>ul>li {
+    color: #FFFFFF;
+    font-weight: 100;
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+}
+
+#strong_li {
+    font-weight: 500 !important;
+    display: flex;
+    align-items: center;
+}
+
+#strong_li::after {
+    content: url(images/navbar/down_arrow.svg);
+}
+
+/* Banner do meio */
+
+#bottom_banner>img {
+    max-width: 80% !important;
+    height: auto !important;
+}
+
+/* Aviso de Frete */
+
+#frete_aviso { /* Div geral */
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#frete_aviso>span {
+    color: #4d4949;
+    margin-bottom: 25px;
+    
+}
+
+/* Linha de Produto */
+
+.sub_title {
+    color: rgba(0, 0, 0, 1);
+    margin: 10px auto;
+    max-width: 80%;
+    font-weight: 500;
+    font-size: 29px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.main_products {
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.section_title {
+    font-size: 25px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.product_line {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    column-gap: 2%;
+    margin: 1% 0 5% 0;
+}
+
+/* Caixa de Produto */
+
+
+.box_product {
+    border: 1px solid #DDDDDD;
+    height: 100%
+}
+
+.product_img {
+    display: flex;
+    justify-content: center;
+}
+
+.product_img>img {
+    max-width: 55%;
+    height: auto;
+    align-self: center;
+    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25);
+    margin: 5%;
+}
+
+.product_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin: 0 5% 5% 5%;
+}
+
+.title {
+    color:rgba(0, 0, 0, 1);
+    font-weight: 500;
+    font-size: 18px;
+    padding: 1% 0;
+}
+
+.author {
+    color:rgba(125, 119, 119, 1);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.price {
+    color: rgb(185, 7, 7);
+    font-weight: 400;
+    font-size: 20px;
+    padding: 2% 0 0 0;
+}
+
+.discount {
+    color: rgba(125, 119, 119, 0.6);
+    font-weight: 400;
+    font-size: 13px;
+    padding: 0 0 2% 0;
+}
+
+.cover_type {
+    color:rgba(125, 119, 119, 1);
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.box_precos {
+    max-width: 100%;
+    height: auto;
+}
+
+.banner_anuncio {
+    max-width: 100%;
+    height: 300px;
+    margin: 0 0 15% 0;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    background-image: url(images/anuncios/genshit.avif);
+    background-position: 20% 20%;
+    background-size: cover;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    background-color: #1F001E;
+}
+
+.footer_main {
+    max-width: 80%;
+    height: auto;
+    display: grid;
+    column-gap: 2%;
+    row-gap: 5%;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 1% 0%;
+}
+
+#f_titles {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.footer_content {
+    color: rgb(240, 230, 230);
+    font-weight: lighter;
+    font-size: 13px;
+    margin: 2%;
+}
+
+#footer_logo {
+    grid-column: 1 / 4;
+}
+
+#redes {
+    display: flex;
+    margin: 0 !important;
+}
+
+#redes a {
+    max-width: 30px;
+    max-height: auto;
+    margin: 2%;
+}
+
+.product_img img {
+    transition: .20s !important;
+}
+
+.product_img img:hover {
+    max-width: 60% !important;
+    transition: .20s !important;
+}
